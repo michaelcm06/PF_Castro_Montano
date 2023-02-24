@@ -10,33 +10,42 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Itim&display=swap"
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Itim&display=swap"rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="top">
+        <div class="top class="p-3 mb-3 border-bottom  style="background-color: #b191dc">
             <h3>MICHPETS</h3>
         </div>
-        <div class="header-prin">
-            <div class="logo"><img src="./assets/img/michpets.jpg" alt=""></div>
-            <form action="#" method="post" target="_blank">
-                <p>
-                    <input type="search" name="busquedamusica" placeholder="Que necesita tu mascota?">
-                    <input type="submit" value="Buscar">
-                </p>
-            </form>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="./Perros.html">Perros</a>
-                <a href="./Gatos.html">Gatos</a>
-                <a href="./Servicios.html">Servicios</a>
-                <a href="./Quienes-somos.html">Quienes somos</a>
-            </nav>
 
-        </div>
+      
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+                  <img src="./assets/img/michpets.jpg" class="bi me-2" width="60" height="60" role="img" aria-label="Bootstrap"> </img>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
+                  <li><a href="./pages/perros.html" class="nav-link px-2 link-dark">Perros</a></li>
+                  <li><a href="./pages/gatos.html" class="nav-link px-2 link-dark">Gatos</a></li>
+                  <li><a href="./pages/servicios.html" class="nav-link px-2 link-dark">Servicios</a></li>
+                  <li><a href="./pages/quienessomos.html" class="nav-link px-2 link-dark">Quienes Somos</a></li>
+                </ul>
+        
+                <form action="#" method="post" target="_blank">
+                    <p>
+                        <input type="search" name="busquedamusica" placeholder="Que necesita tu mascota?">
+                        <input type="submit" value="Buscar">
+                    </p>
+                </form>
+
+              </div>
+            </div>
+         
+    
 
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -52,34 +61,45 @@
         </section>
 
         <section class="Categorias">
-            <div class="contendor-cate">
-                <h2 class="titulo">Categorias</h2>
-                <div class="galeria-cate">
-                    <div class="imagen-cate">
-                        <img src="./assets/img/alimento.jpg" alt="">
-                        <div class="hover-galeria">
-                        </div>
-                    </div>
-                    <div class="imagen-cate">
-                        <img src="./assets/img/accesorio.jpg" alt="">
-                        <div class="hover-galeria">
-                        </div>
-                    </div>
-                    <div class="imagen-cate">
-                        <img src="./assets/img/juguete.jpg" alt="">
-                        <div class="hover-galeria">
-                        </div>
-                    </div>
-                    <div class="imagen-cate">
-                        <img src="./assets/img/premio.jpg" alt="">
-                        <div class="hover-galeria">
-                        </div>
-                    </div>
+        <div class="container1 px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">Categorias</h2>
+        
+            <div class="row row-cols-sm-1 row-cols-sm-4 align-items-stretch g-4 py-5">
+              <div class="col">
+                <div class="overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/img/alimento.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bolder text-black">Comida</h3>
+                  </div>
                 </div>
+              </div>
+        
+              <div class="col">
+                <div class="overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/img/accesorio.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black">Accesorios</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/img/juguete.jpg')">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black">Juguetes</h3>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col">
+                <div class="overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/img/premio.jpg');">
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-black">Premios</h3>
+                  </div>
+                </div>
+              </div>
             </div>
-            </div>
-            </div>
+          </div>
         </section>
+
         <section class="portafolio">
             <div class="contendor">
                 <h2 class="titulo">Nuestras Marcas Aliadas</h2>
@@ -130,47 +150,74 @@
             </div>
         </section>
 
-        </section>
-        <section class="contenedor sobre-nosotros">
-            <div class="contenedor-sobre-nosotros">
-                <img src="./assets/img/somo.png" alt="" class="imagen-about-us">
-                <div class="contenido-textos">
-                    <h3><span>1</span>Sigamos en contacto</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                        velit doloribus laboriosam ut.</p>
-                    <form action="Read">
-                        <label for="Name">Name</label>
-                        <input type="text" id="name" name="name" required minlength="4" maxlength="30" size="10">
-                        <label for="Email">Email</label>
-                        <input type="text" id="email" name="email" required minlength="15" maxlength="50" size="10">
-                        <button class="btn-suc">Enviar</button>
-                    </form>
+
+        <section class="contenedor sobre-nosotros">     
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./assets/img/somo.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" width="700" height="500">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Sigamos en contacto</h1>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam consectetur molestiae provident facere eum, explicabo odit voluptatibus repellendus, a et magni ipsa aut nostrum dolorum expedita, tenetur quos ut in?</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Name</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Name">
+                        <label for="newsletter1" class="visually-hidden">Correo Electronico</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electronico">
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                      </div>
                 </div>
+              </div>
             </div>
+          </div>
         </section>
+        
     </main>
-    <footer>
-        <div class="contenedor-footer">
-            <div class="logo"><img src="./assets/img/michpets.jpg" alt=""></div>
+    <div class="container">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <img src="./assets/img/michpets.jpg" class="bi me-2" width="100%" height="90%" role="img" aria-label="Bootstrap"> </img>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Acerca de</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Suscribete a nuestras noticias</h5>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Correo Electronico</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electronico">
+                  <button class="btn btn-primary" type="button">Suscribete</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2022 MichPets, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
 
-            <div class="content-foo">
-                <H4>Acerca de MICHPETS</H4>
-                <p>315825522</p>
-            </div>
-            <div class="content-foo">
-                <H4>Preguntas</H4>
-                <p>315825522</p>
-            </div>
-            <div class="content-foo">
-                <H4>Suscribete</H4>
-                <label for="Suscribete">Email</label>
-                <input type="text" id="Suscribete" name="Suscribete" required minlength="4" maxlength="30" size="10">
-
-            </div>
-        </div>
-        <h2 class="titulo-final">&copy; Michael Castro </h2>
-    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 

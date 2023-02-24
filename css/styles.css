@@ -1,6 +1,6 @@
 :root {
     /* Colores*/
-    --purple: #b191db54;
+    --purple: #b191dc;
     --black: #201e1c;
     --grey: #bababa;
     --just-white: #fff;
@@ -40,6 +40,23 @@ body {
 }
 
 /* HEADER */
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+    
+ }
+ #menu a img {
+    width: 80px;
+    opacity: 80%;
+ }
+
+ #menu a{
+     color:#3f3f3f;
+     
+ }
+
+
 header {
     width: 100%;
     height: 450px;
@@ -50,9 +67,12 @@ header {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, hsla(301, 69%, 86%, 0.522), hsla(301, 96%, 70%, 0.612)), url(..//assets/img/banner-pri.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:100%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
 }
+
 
 .top {
     background-color: #B191DB;
@@ -92,14 +112,15 @@ nav {
     padding: 0px -10px 80px 80px;
 }
 
-nav>a {
+nav>ul>li>a
+ {
     color: #fff;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
 }
 
-nav>a:hover {
+nav>ul>li>a:hover {
     text-decoration: underline;
 }
 
@@ -140,8 +161,9 @@ header .textos-header {
 
 /* Categorias */
 
-.Categorias {
-    background: var(--purple);
+
+.container1{
+    background-color: var(--purple);
 }
 
 .galeria-cate {
@@ -250,7 +272,7 @@ main .sobre-nosotros {
 }
 
 .imagen-about-us {
-    width: 48%;
+    width: 30%;
 }
 
 .sobre-nosotros .contenido-textos {
@@ -280,46 +302,6 @@ main .sobre-nosotros {
     text-align: justify;
 }
 
-/* footer */
-
-footer {
-    background: #fff;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
-}
-
-
-.contenedor-footer {
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-}
-
-.content-foo {
-    text-align: center;
-}
-
-.content-foo h4 {
-    color: rgb(0, 0, 0);
-    border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-
-.content-foo p {
-    color: #ccc;
-}
-
-.titulo-final {
-    text-align: center;
-    font-size: 24px;
-    margin: 20px 0 0 0;
-    color: #9e9797;
-}
 
 /* Galeria Perros y gatos*/
 
