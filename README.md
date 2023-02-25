@@ -1,2 +1,2 @@
 # PreEntrega2_Castro_Montano
-Proyecto curso Desarrollo web coder house
+Segunda entrega proyecto curso Desarrollo web coder house
