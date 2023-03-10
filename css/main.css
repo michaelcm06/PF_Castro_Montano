@@ -41,6 +41,11 @@ header {
   max-width: 100%;
   max-height: 100%;
 }
+@media only screen and (min-width: 1000px) {
+  .banner-prin img {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .banner-prin img {
     visibility: collapse;
@@ -69,10 +74,6 @@ header {
   position: center;
   height: auto;
 }
-.categories .category h4 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
 
 .category img {
   z-index: -10;
@@ -85,13 +86,22 @@ header {
   width: 60%;
 }
 @media only screen and (max-width: 1000px) {
-  .category img,
-  .category h4,
-  .category h2 {
+  .category img {
     margin-top: -200px;
   }
   .category .card-img-top4 {
-    width: 40%;
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .category img {
+    margin-top: -200px;
+  }
+  .category h4 {
+    font-size: 15px;
+  }
+  .category .card-img-top4 {
+    width: 65%;
   }
 }
 
@@ -127,6 +137,7 @@ header {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
+  margin-top: auto;
 }
 .carouselt h2 {
   z-index: -10;
@@ -152,11 +163,31 @@ header {
   position: center;
   height: auto;
 }
+@media only screen and (max-width: 1000px) {
+  .carouselt {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: -250px;
+  }
+  .carouselt .row-1,
+  .carouselt .row-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .carouselt .row-1 img,
+  .carouselt .row-2 img {
+    max-width: 85%;
+    height: auto;
+  }
+}
 @media only screen and (max-width: 767px) {
   .carouselt {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-top: -300px;
   }
   .carouselt .row-1,
   .carouselt .row-2 {
@@ -175,6 +206,7 @@ header {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-top: -300px;
   }
   .carouselt .row-1,
   .carouselt .row-2 {
@@ -186,6 +218,13 @@ header {
   .carouselt .row-2 img {
     max-width: 85%;
     height: auto;
+  }
+}
+
+/* PERROS Y GATOS*/
+@media only screen and (max-width: 991px) {
+  .contenedor img {
+    margin-top: 200px;
   }
 }
 
