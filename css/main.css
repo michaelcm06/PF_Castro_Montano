@@ -228,4 +228,11 @@ header {
   }
 }
 
+/*SERVICIOS */
+@media only screen and (max-width: 991px) {
+  .contenedor3 img {
+    background-color: red;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -288,3 +288,15 @@ header {
     }
    
 }
+
+/*SERVICIOS */ 
+
+.contenedor3{
+
+    @media only screen and (max-width: 991px) {
+        img{
+            background-color: red;
+        }
+    }
+   
+}
