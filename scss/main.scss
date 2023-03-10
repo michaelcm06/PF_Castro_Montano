@@ -118,7 +118,7 @@ header {
 
     @media only screen and (max-width: 1000px) {
 
-        img{
+        img {
             margin-top: -200px;
 
         }
@@ -131,13 +131,15 @@ header {
 
     @media only screen and (max-width: 850px) {
 
-        img{
+        img {
             margin-top: -200px;
 
         }
-        h4{
+
+        h4 {
             font-size: 15px;
         }
+
         .card-img-top4 {
             width: 65%;
         }
@@ -279,24 +281,45 @@ header {
 
 /* PERROS Y GATOS*/
 
-.contenedor{
+.contenedor {
+
+    margin-top: 100px;
 
     @media only screen and (max-width: 991px) {
-        img{
+        img {
             margin-top: 200px;
         }
     }
-   
+
+    p {
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+
 }
 
-/*SERVICIOS */ 
 
-.contenedor3{
+
+/*SERVICIOS */
+
+.contenedor3 {
 
     @media only screen and (max-width: 991px) {
-        img{
-            background-color: red;
+        img {
+            margin-top: -380px;
         }
     }
-   
+
 }
