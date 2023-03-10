@@ -222,16 +222,33 @@ header {
 }
 
 /* PERROS Y GATOS*/
+.contenedor {
+  margin-top: 100px;
+}
 @media only screen and (max-width: 991px) {
   .contenedor img {
     margin-top: 200px;
+  }
+}
+.contenedor p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
 /*SERVICIOS */
 @media only screen and (max-width: 991px) {
   .contenedor3 img {
-    background-color: red;
+    margin-top: -380px;
   }
 }
 
